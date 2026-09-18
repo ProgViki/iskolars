@@ -21,7 +21,11 @@ import {
   CheckCircle,
   ArrowRight,
   Play,
-} from "lucide-react"
+  Smartphone,
+  Layout,
+  BarChart3,
+  Megaphone,
+} from "lucide-react";
 
 export default function GeophiaAcademy() {
   return (
@@ -118,8 +122,8 @@ export default function GeophiaAcademy() {
             <div className="relative">
               <div className="relative z-10">
                 <img
-                  src="/placeholder.svg?height=600&width=500"
-                  alt="Students learning at Geophia Academy"
+                  src="/iskolars.png?height=600&width=500"
+                  alt="Students learning at iSkolars Academy"
                   className="rounded-2xl shadow-2xl w-full h-auto"
                 />
               </div>
@@ -263,6 +267,116 @@ export default function GeophiaAcademy() {
                 </CardContent>
               </Card>
 
+              {/* New Tech Sections */}
+              <Card className="border-indigo-200 hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                    <Smartphone className="h-6 w-6 text-indigo-600" />
+                  </div>
+                  <CardTitle className="text-indigo-900">App Development</CardTitle>
+                  <CardDescription>iOS & Android Development</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="secondary" className="text-xs">
+                      React Native
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      Flutter
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      Swift
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      Kotlin
+                    </Badge>
+                  </div>
+                  <p className="text-sm text-gray-600">Build native and cross-platform mobile applications</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-pink-200 hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                    <Layout className="h-6 w-6 text-pink-600" />
+                  </div>
+                  <CardTitle className="text-pink-900">UI/UX Design</CardTitle>
+                  <CardDescription>User Interface & Experience Design</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="secondary" className="text-xs">
+                      Figma
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      Adobe XD
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      User Research
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      Prototyping
+                    </Badge>
+                  </div>
+                  <p className="text-sm text-gray-600">Design intuitive and engaging user experiences</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-cyan-200 hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4">
+                    <BarChart3 className="h-6 w-6 text-cyan-600" />
+                  </div>
+                  <CardTitle className="text-cyan-900">Data Analytics</CardTitle>
+                  <CardDescription>Data Science & Business Intelligence</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="secondary" className="text-xs">
+                      Python
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      SQL
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      Tableau
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      Power BI
+                    </Badge>
+                  </div>
+                  <p className="text-sm text-gray-600">Transform data into actionable business insights</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-amber-200 hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+                    <Megaphone className="h-6 w-6 text-amber-600" />
+                  </div>
+                  <CardTitle className="text-amber-900">Digital Marketing</CardTitle>
+                  <CardDescription>Online Marketing & Strategy</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="secondary" className="text-xs">
+                      SEO
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      Social Media
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      Content Marketing
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
+                      Google Ads
+                    </Badge>
+                  </div>
+                  <p className="text-sm text-gray-600">Master digital strategies to grow businesses online</p>
+                </CardContent>
+              </Card>
+
+              {/* Existing Tech Courses */}
               <Card className="border-red-200 hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
@@ -293,7 +407,7 @@ export default function GeophiaAcademy() {
                     <Palette className="h-6 w-6 text-purple-600" />
                   </div>
                   <CardTitle className="text-purple-900">Design & Graphics</CardTitle>
-                  <CardDescription>UI/UX & Graphic Design</CardDescription>
+                  <CardDescription>Graphics & 3D Design</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -304,7 +418,7 @@ export default function GeophiaAcademy() {
                       Illustrator
                     </Badge>
                     <Badge variant="secondary" className="text-xs">
-                      Figma
+                      Corel Draw
                     </Badge>
                   </div>
                   <p className="text-sm text-gray-600">Create stunning visuals and user experiences</p>
@@ -349,6 +463,9 @@ export default function GeophiaAcademy() {
                       MS Office
                     </Badge>
                     <Badge variant="secondary" className="text-xs">
+                      MS Excel
+                    </Badge>
+                    <Badge variant="secondary" className="text-xs">
                       Internet Skills
                     </Badge>
                     <Badge variant="secondary" className="text-xs">
@@ -368,10 +485,10 @@ export default function GeophiaAcademy() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-green-100 text-green-800 border-green-200 mb-4">About Geophia Academy</Badge>
+              <Badge className="bg-green-100 text-green-800 border-green-200 mb-4">About iSkolars Academy</Badge>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Bridging Education & Technology in Lagos</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Located in the heart of Lekki, Lagos, Geophia Academy stands as a beacon of educational excellence,
+                Located in the heart of Ajah, Lagos, iSkolars Academy stands as a beacon of educational excellence,
                 combining traditional academic coaching with cutting-edge technology training.
               </p>
               <div className="space-y-4 mb-8">
@@ -424,7 +541,7 @@ export default function GeophiaAcademy() {
             </div>
             <div className="relative">
               <img
-                src="/placeholder.svg?height=500&width=600"
+                src="/iskolars2.png?height=500&width=600"
                 alt="Geophia Academy campus"
                 className="rounded-2xl shadow-xl w-full h-auto"
               />
@@ -434,7 +551,7 @@ export default function GeophiaAcademy() {
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Located in Lekki</h4>
+                    <h4 className="font-semibold text-gray-900">Located in Ajah</h4>
                     <p className="text-sm text-gray-600">Easy access, modern facilities</p>
                   </div>
                 </div>
@@ -465,7 +582,7 @@ export default function GeophiaAcademy() {
                     </div>
                     <div>
                       <h4 className="font-semibold">Location</h4>
-                      <p className="text-blue-100">Lekki, Lagos State, Nigeria</p>
+                      <p className="text-blue-100">Ajah, Lagos State, Nigeria</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -474,7 +591,7 @@ export default function GeophiaAcademy() {
                     </div>
                     <div>
                       <h4 className="font-semibold">Phone</h4>
-                      <p className="text-blue-100">+234 (0) 123 456 7890</p>
+                      <p className="text-blue-100">+234 (0) 8107636586</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -483,7 +600,7 @@ export default function GeophiaAcademy() {
                     </div>
                     <div>
                       <h4 className="font-semibold">Email</h4>
-                      <p className="text-blue-100">info@geophiaacademy.com</p>
+                      <p className="text-blue-100">info@iskolarsacademy.com</p>
                     </div>
                   </div>
                 </div>
@@ -656,7 +773,7 @@ export default function GeophiaAcademy() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400">© {new Date().getFullYear()} Geophia Academy. All rights reserved.</p>
+            <p className="text-gray-400">© {new Date().getFullYear()} iSkolars Academy. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
