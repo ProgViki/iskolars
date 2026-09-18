@@ -133,7 +133,7 @@ function Logo({ size = 40, className = "" }: { size?: number; className?: string
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src="/logo.png"
+      src="/newLogo1.png"
       alt="iSkolars Academy Logo"
       width={size}
       height={size}
@@ -359,7 +359,7 @@ export default function ISkolarsAcademy() {
                 <Logo size={44} />
               </div>
               <div className="leading-tight">
-                <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[#1e3a8a] to-green-600 bg-clip-text text-transparent whitespace-nowrap">
+                <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[#1e3a8a] to-yellow-600 bg-clip-text text-transparent whitespace-nowrap">
                   iSkolars Academy
                 </h1>
                 <p className="text-[11px] text-gray-600 whitespace-nowrap hidden sm:block">
